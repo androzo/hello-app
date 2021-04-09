@@ -19,6 +19,7 @@ Create two secrets in Secret Manager with the RDS user and password to be used
 * rds_pass
 * rds_user
 
+### Deploy infra ###
 ```
 cd terraform
 terraform init
@@ -27,6 +28,7 @@ terraform apply -var-file="dev"
 
 # terraform destroy -var-file="dev"
 ```
+## Run the app
 
 ### Run locally
 ```
