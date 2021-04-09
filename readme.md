@@ -7,9 +7,9 @@
 * Python 3.x
   * pip3 (`python3 -m pip install --upgrade pip`)
   * flask (`python3 -m pip install flask`)
-* AWS cli installed and configured [https://docs.aws.amazon.com/pt_br/cli/latest/userguide/cli-chap-install.html]
+* AWS credentials configured so you can get your terraform resources created
 * Docker
-* Kubernetes
+* kubectl
 * Terraform
 * Minikube
 
@@ -39,7 +39,7 @@ flask run
 ### Run in Kubernetes local
 If you don't have a k8s cluster on AWS/GCP/Azure/Openshift like myself, you can play around with k8s with minikube
 
-Install
 ```
-
+kubectl apply -f k8s
+# destroy => kubectl delete -f k8s
 ```
