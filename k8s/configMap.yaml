@@ -1,0 +1,10 @@
+--- 
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-app-configmap
+data:
+  flask_env: "development"
+  flask_app: "app.py"
+  my_var: "giropops lifestyle"
